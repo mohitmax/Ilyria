@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7020A39E2562311200CF9D1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A39D2562311200CF9D1E /* AppDelegate.swift */; };
+		7020A3A02562311200CF9D1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A39F2562311200CF9D1E /* SceneDelegate.swift */; };
+		7020A3A22562311200CF9D1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3A12562311200CF9D1E /* ViewController.swift */; };
+		7020A3A52562311300CF9D1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020A3A32562311300CF9D1E /* Main.storyboard */; };
+		7020A3A72562311500CF9D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020A3A62562311500CF9D1E /* Assets.xcassets */; };
+		7020A3AA2562311500CF9D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020A3A82562311500CF9D1E /* LaunchScreen.storyboard */; };
+		7020A3B52562311500CF9D1E /* IlyriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3B42562311500CF9D1E /* IlyriaTests.swift */; };
+		7020A3C02562311500CF9D1E /* IlyriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3BF2562311500CF9D1E /* IlyriaUITests.swift */; };
+		7020A3D7256234C700CF9D1E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D4256234C700CF9D1E /* Hero.swift */; };
+		7020A3D8256234C700CF9D1E /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D5256234C700CF9D1E /* Monster.swift */; };
+		7020A3D9256234C700CF9D1E /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D6256234C700CF9D1E /* Creature.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7020A3B12562311500CF9D1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7020A3922562311200CF9D1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7020A3992562311200CF9D1E;
+			remoteInfo = Ilyria;
+		};
+		7020A3BC2562311500CF9D1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7020A3922562311200CF9D1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7020A3992562311200CF9D1E;
+			remoteInfo = Ilyria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7020A39A2562311200CF9D1E /* Ilyria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ilyria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020A39D2562311200CF9D1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7020A39F2562311200CF9D1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7020A3A12562311200CF9D1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7020A3A42562311300CF9D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7020A3A62562311500CF9D1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7020A3A92562311500CF9D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7020A3AB2562311500CF9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020A3B02562311500CF9D1E /* IlyriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlyriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020A3B42562311500CF9D1E /* IlyriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlyriaTests.swift; sourceTree = "<group>"; };
+		7020A3B62562311500CF9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020A3BB2562311500CF9D1E /* IlyriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlyriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020A3BF2562311500CF9D1E /* IlyriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlyriaUITests.swift; sourceTree = "<group>"; };
+		7020A3C12562311500CF9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020A3D4256234C700CF9D1E /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hero.swift; path = ../../../../../../../Desktop/Hero.swift; sourceTree = "<group>"; };
+		7020A3D5256234C700CF9D1E /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = ../../../../../../../Desktop/Monster.swift; sourceTree = "<group>"; };
+		7020A3D6256234C700CF9D1E /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Creature.swift; path = ../../../../../../../Desktop/Creature.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7020A3972562311200CF9D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3AD2562311500CF9D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3B82562311500CF9D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7020A3912562311200CF9D1E = {
+			isa = PBXGroup;
+			children = (
+				7020A39C2562311200CF9D1E /* Ilyria */,
+				7020A3B32562311500CF9D1E /* IlyriaTests */,
+				7020A3BE2562311500CF9D1E /* IlyriaUITests */,
+				7020A39B2562311200CF9D1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7020A39B2562311200CF9D1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7020A39A2562311200CF9D1E /* Ilyria.app */,
+				7020A3B02562311500CF9D1E /* IlyriaTests.xctest */,
+				7020A3BB2562311500CF9D1E /* IlyriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7020A39C2562311200CF9D1E /* Ilyria */ = {
+			isa = PBXGroup;
+			children = (
+				7020A3D3256234B300CF9D1E /* Creatures */,
+				7020A39D2562311200CF9D1E /* AppDelegate.swift */,
+				7020A39F2562311200CF9D1E /* SceneDelegate.swift */,
+				7020A3A12562311200CF9D1E /* ViewController.swift */,
+				7020A3A32562311300CF9D1E /* Main.storyboard */,
+				7020A3A62562311500CF9D1E /* Assets.xcassets */,
+				7020A3A82562311500CF9D1E /* LaunchScreen.storyboard */,
+				7020A3AB2562311500CF9D1E /* Info.plist */,
+			);
+			path = Ilyria;
+			sourceTree = "<group>";
+		};
+		7020A3B32562311500CF9D1E /* IlyriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7020A3B42562311500CF9D1E /* IlyriaTests.swift */,
+				7020A3B62562311500CF9D1E /* Info.plist */,
+			);
+			path = IlyriaTests;
+			sourceTree = "<group>";
+		};
+		7020A3BE2562311500CF9D1E /* IlyriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7020A3BF2562311500CF9D1E /* IlyriaUITests.swift */,
+				7020A3C12562311500CF9D1E /* Info.plist */,
+			);
+			path = IlyriaUITests;
+			sourceTree = "<group>";
+		};
+		7020A3D3256234B300CF9D1E /* Creatures */ = {
+			isa = PBXGroup;
+			children = (
+				7020A3D6256234C700CF9D1E /* Creature.swift */,
+				7020A3D4256234C700CF9D1E /* Hero.swift */,
+				7020A3D5256234C700CF9D1E /* Monster.swift */,
+			);
+			path = Creatures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7020A3992562311200CF9D1E /* Ilyria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020A3C42562311500CF9D1E /* Build configuration list for PBXNativeTarget "Ilyria" */;
+			buildPhases = (
+				7020A3962562311200CF9D1E /* Sources */,
+				7020A3972562311200CF9D1E /* Frameworks */,
+				7020A3982562311200CF9D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ilyria;
+			productName = Ilyria;
+			productReference = 7020A39A2562311200CF9D1E /* Ilyria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7020A3AF2562311500CF9D1E /* IlyriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020A3C72562311500CF9D1E /* Build configuration list for PBXNativeTarget "IlyriaTests" */;
+			buildPhases = (
+				7020A3AC2562311500CF9D1E /* Sources */,
+				7020A3AD2562311500CF9D1E /* Frameworks */,
+				7020A3AE2562311500CF9D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7020A3B22562311500CF9D1E /* PBXTargetDependency */,
+			);
+			name = IlyriaTests;
+			productName = IlyriaTests;
+			productReference = 7020A3B02562311500CF9D1E /* IlyriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7020A3BA2562311500CF9D1E /* IlyriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020A3CA2562311500CF9D1E /* Build configuration list for PBXNativeTarget "IlyriaUITests" */;
+			buildPhases = (
+				7020A3B72562311500CF9D1E /* Sources */,
+				7020A3B82562311500CF9D1E /* Frameworks */,
+				7020A3B92562311500CF9D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7020A3BD2562311500CF9D1E /* PBXTargetDependency */,
+			);
+			name = IlyriaUITests;
+			productName = IlyriaUITests;
+			productReference = 7020A3BB2562311500CF9D1E /* IlyriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7020A3922562311200CF9D1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7020A3992562311200CF9D1E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					7020A3AF2562311500CF9D1E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7020A3992562311200CF9D1E;
+					};
+					7020A3BA2562311500CF9D1E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7020A3992562311200CF9D1E;
+					};
+				};
+			};
+			buildConfigurationList = 7020A3952562311200CF9D1E /* Build configuration list for PBXProject "Ilyria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7020A3912562311200CF9D1E;
+			productRefGroup = 7020A39B2562311200CF9D1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7020A3992562311200CF9D1E /* Ilyria */,
+				7020A3AF2562311500CF9D1E /* IlyriaTests */,
+				7020A3BA2562311500CF9D1E /* IlyriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7020A3982562311200CF9D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020A3AA2562311500CF9D1E /* LaunchScreen.storyboard in Resources */,
+				7020A3A72562311500CF9D1E /* Assets.xcassets in Resources */,
+				7020A3A52562311300CF9D1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3AE2562311500CF9D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3B92562311500CF9D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7020A3962562311200CF9D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020A3D8256234C700CF9D1E /* Monster.swift in Sources */,
+				7020A3A22562311200CF9D1E /* ViewController.swift in Sources */,
+				7020A3D9256234C700CF9D1E /* Creature.swift in Sources */,
+				7020A39E2562311200CF9D1E /* AppDelegate.swift in Sources */,
+				7020A3A02562311200CF9D1E /* SceneDelegate.swift in Sources */,
+				7020A3D7256234C700CF9D1E /* Hero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3AC2562311500CF9D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020A3B52562311500CF9D1E /* IlyriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020A3B72562311500CF9D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020A3C02562311500CF9D1E /* IlyriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7020A3B22562311500CF9D1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7020A3992562311200CF9D1E /* Ilyria */;
+			targetProxy = 7020A3B12562311500CF9D1E /* PBXContainerItemProxy */;
+		};
+		7020A3BD2562311500CF9D1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7020A3992562311200CF9D1E /* Ilyria */;
+			targetProxy = 7020A3BC2562311500CF9D1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7020A3A32562311300CF9D1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7020A3A42562311300CF9D1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7020A3A82562311500CF9D1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7020A3A92562311500CF9D1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7020A3C22562311500CF9D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7020A3C32562311500CF9D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7020A3C52562311500CF9D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = Ilyria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.Ilyria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7020A3C62562311500CF9D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = Ilyria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.Ilyria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7020A3C82562311500CF9D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = IlyriaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.IlyriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ilyria.app/Ilyria";
+			};
+			name = Debug;
+		};
+		7020A3C92562311500CF9D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = IlyriaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.IlyriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ilyria.app/Ilyria";
+			};
+			name = Release;
+		};
+		7020A3CB2562311500CF9D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = IlyriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.IlyriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ilyria;
+			};
+			name = Debug;
+		};
+		7020A3CC2562311500CF9D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2DG94T8S;
+				INFOPLIST_FILE = IlyriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.sadhu.mohit.IlyriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ilyria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7020A3952562311200CF9D1E /* Build configuration list for PBXProject "Ilyria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020A3C22562311500CF9D1E /* Debug */,
+				7020A3C32562311500CF9D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020A3C42562311500CF9D1E /* Build configuration list for PBXNativeTarget "Ilyria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020A3C52562311500CF9D1E /* Debug */,
+				7020A3C62562311500CF9D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020A3C72562311500CF9D1E /* Build configuration list for PBXNativeTarget "IlyriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020A3C82562311500CF9D1E /* Debug */,
+				7020A3C92562311500CF9D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020A3CA2562311500CF9D1E /* Build configuration list for PBXNativeTarget "IlyriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020A3CB2562311500CF9D1E /* Debug */,
+				7020A3CC2562311500CF9D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7020A3922562311200CF9D1E /* Project object */;
+}
