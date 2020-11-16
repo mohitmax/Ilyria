@@ -5,6 +5,10 @@
 //  Created by mickey on 2020-11-15.
 //
 
+enum CreatureType: String {
+    case hero, monster, npc
+}
+
 protocol Creature {
     var name: String { get }
     var healthPoints: Int { get set }

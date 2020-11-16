@@ -49,4 +49,5 @@ class Hero: Creature {
     func attack() -> Int {
         return damageValue
     }
+    
 }

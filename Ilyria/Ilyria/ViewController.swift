@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var heroAttackButton: UIButton!
     @IBOutlet weak var monsterAttackButton: UIButton!
-    @IBOutlet weak var combatLogLabel: UILabel!
+    @IBOutlet weak var combatLogView: UITextView!
         
     var hero: Hero?
     var lion: Monster?
@@ -77,9 +77,16 @@ class ViewController: UIViewController {
         let logString = logs.reduce("\n") { (result, log) -> String in
             result + log
         }
-        
-        combatLogLabel.text = logString
+        combatLogView.text = logString
+        combatLogView.simple_scrollToBottom()
     }
     
 }
 
+extension UITextView {
+    func simple_scrollToBottom() {
+        let textCount: Int = text.count
+        guard textCount >= 1 else { return }
+        scrollRangeToVisible(NSRange(location: textCount - 1, length: 1))
+    }
+}

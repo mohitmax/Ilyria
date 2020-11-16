@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ilyria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-6T-OWL">
-                                <rect key="frame" x="20" y="125" width="374" height="60"/>
+                                <rect key="frame" x="20" y="125" width="350" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.656692343013631" blue="0.54750797686343255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rjh-ji-m69"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-ct-ftE">
-                                <rect key="frame" x="20" y="207" width="374" height="60"/>
+                                <rect key="frame" x="20" y="207" width="350" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rPa-oP-MwC"/>
@@ -44,31 +44,34 @@
                                     <action selector="monsterAttackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kon-M1-UTW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combat Logs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-8q-3xZ">
-                                <rect key="frame" x="20" y="318" width="374" height="492"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Combat logs will be displayed here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-4c-p7g">
+                                <rect key="frame" x="20" y="317" width="350" height="457"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="j9a-Ll-u6f"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wvB-8q-3xZ" firstAttribute="top" secondItem="oLx-ct-ftE" secondAttribute="bottom" constant="51" id="0cp-5x-5Qc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wvB-8q-3xZ" secondAttribute="trailing" constant="20" id="Ba5-N0-Wfi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wvB-8q-3xZ" secondAttribute="bottom" constant="52" id="DeV-JX-Imv"/>
+                            <constraint firstItem="DjG-4c-p7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="36n-RH-WWk"/>
+                            <constraint firstItem="DjG-4c-p7g" firstAttribute="top" secondItem="oLx-ct-ftE" secondAttribute="bottom" constant="50" id="Bzq-Hp-TQX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLx-ct-ftE" secondAttribute="trailing" constant="20" id="MLs-zW-WKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjG-4c-p7g" secondAttribute="trailing" constant="20" id="PSs-UY-Ebc"/>
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YPO-J5-AcP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DjG-4c-p7g" secondAttribute="bottom" constant="36" id="hgP-ni-1GD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7E-6T-OWL" secondAttribute="trailing" constant="20" id="jn4-GH-f2u"/>
                             <constraint firstItem="oLx-ct-ftE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nH7-zW-RbM"/>
                             <constraint firstItem="oLx-ct-ftE" firstAttribute="top" secondItem="i7E-6T-OWL" secondAttribute="bottom" constant="22" id="njM-eh-gco"/>
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="oKA-oY-DA7"/>
-                            <constraint firstItem="wvB-8q-3xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vEM-Lh-HtY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="combatLogLabel" destination="wvB-8q-3xZ" id="hvd-Rm-Cq5"/>
+                        <outlet property="combatLogView" destination="DjG-4c-p7g" id="3ZG-OQ-XdU"/>
                         <outlet property="heroAttackButton" destination="i7E-6T-OWL" id="UGB-zU-E1A"/>
                         <outlet property="monsterAttackButton" destination="oLx-ct-ftE" id="uSB-5A-bYw"/>
                     </connections>
@@ -79,11 +82,17 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
