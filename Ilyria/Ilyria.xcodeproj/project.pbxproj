@@ -15,9 +15,9 @@
 		7020A3AA2562311500CF9D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020A3A82562311500CF9D1E /* LaunchScreen.storyboard */; };
 		7020A3B52562311500CF9D1E /* IlyriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3B42562311500CF9D1E /* IlyriaTests.swift */; };
 		7020A3C02562311500CF9D1E /* IlyriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3BF2562311500CF9D1E /* IlyriaUITests.swift */; };
-		7020A3D7256234C700CF9D1E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D4256234C700CF9D1E /* Hero.swift */; };
-		7020A3D8256234C700CF9D1E /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D5256234C700CF9D1E /* Monster.swift */; };
-		7020A3D9256234C700CF9D1E /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020A3D6256234C700CF9D1E /* Creature.swift */; };
+		703C55D7256302AB00880992 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D4256302AB00880992 /* Creature.swift */; };
+		703C55D8256302AB00880992 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D5256302AB00880992 /* Monster.swift */; };
+		703C55D9256302AB00880992 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D6256302AB00880992 /* Hero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		7020A3BB2562311500CF9D1E /* IlyriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlyriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7020A3BF2562311500CF9D1E /* IlyriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlyriaUITests.swift; sourceTree = "<group>"; };
 		7020A3C12562311500CF9D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7020A3D4256234C700CF9D1E /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hero.swift; path = ../../../../../../../Desktop/Hero.swift; sourceTree = "<group>"; };
-		7020A3D5256234C700CF9D1E /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = ../../../../../../../Desktop/Monster.swift; sourceTree = "<group>"; };
-		7020A3D6256234C700CF9D1E /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Creature.swift; path = ../../../../../../../Desktop/Creature.swift; sourceTree = "<group>"; };
+		703C55D4256302AB00880992 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		703C55D5256302AB00880992 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		703C55D6256302AB00880992 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		7020A3D3256234B300CF9D1E /* Creatures */ = {
 			isa = PBXGroup;
 			children = (
-				7020A3D6256234C700CF9D1E /* Creature.swift */,
-				7020A3D4256234C700CF9D1E /* Hero.swift */,
-				7020A3D5256234C700CF9D1E /* Monster.swift */,
+				703C55D4256302AB00880992 /* Creature.swift */,
+				703C55D6256302AB00880992 /* Hero.swift */,
+				703C55D5256302AB00880992 /* Monster.swift */,
 			);
 			path = Creatures;
 			sourceTree = "<group>";
@@ -275,12 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7020A3D8256234C700CF9D1E /* Monster.swift in Sources */,
+				703C55D8256302AB00880992 /* Monster.swift in Sources */,
+				703C55D7256302AB00880992 /* Creature.swift in Sources */,
 				7020A3A22562311200CF9D1E /* ViewController.swift in Sources */,
-				7020A3D9256234C700CF9D1E /* Creature.swift in Sources */,
 				7020A39E2562311200CF9D1E /* AppDelegate.swift in Sources */,
 				7020A3A02562311200CF9D1E /* SceneDelegate.swift in Sources */,
-				7020A3D7256234C700CF9D1E /* Hero.swift in Sources */,
+				703C55D9256302AB00880992 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
