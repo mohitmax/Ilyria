@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.title = "Ilyria RPG"
+        
         createCreatures()
     }
 
@@ -71,6 +73,10 @@ class ViewController: UIViewController {
             
             updateUI()
         }
+    }
+    
+    @IBAction func createHeroAction(_ sender: UIButton) {
+        
     }
     
     func updateCombatLogs() {

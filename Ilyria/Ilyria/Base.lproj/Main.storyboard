@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ReA-kx-waa">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-6T-OWL">
-                                <rect key="frame" x="20" y="125" width="350" height="60"/>
+                                <rect key="frame" x="20" y="169" width="350" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.656692343013631" blue="0.54750797686343255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rjh-ji-m69"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-ct-ftE">
-                                <rect key="frame" x="20" y="207" width="350" height="60"/>
+                                <rect key="frame" x="20" y="251" width="350" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rPa-oP-MwC"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Combat logs will be displayed here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-4c-p7g">
-                                <rect key="frame" x="20" y="317" width="350" height="457"/>
+                                <rect key="frame" x="20" y="361" width="350" height="413"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -54,15 +54,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="j9a-Ll-u6f"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se3-S3-RE0">
+                                <rect key="frame" x="287" y="88" width="83" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ivW-lM-6aN"/>
+                                </constraints>
+                                <state key="normal" title="Create Hero"/>
+                                <connections>
+                                    <action selector="createHeroAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiA-NH-eIw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DjG-4c-p7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="36n-RH-WWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Se3-S3-RE0" secondAttribute="trailing" constant="20" id="Acu-N6-smN"/>
+                            <constraint firstItem="Se3-S3-RE0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AyG-Wj-u0U"/>
                             <constraint firstItem="DjG-4c-p7g" firstAttribute="top" secondItem="oLx-ct-ftE" secondAttribute="bottom" constant="50" id="Bzq-Hp-TQX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLx-ct-ftE" secondAttribute="trailing" constant="20" id="MLs-zW-WKc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjG-4c-p7g" secondAttribute="trailing" constant="20" id="PSs-UY-Ebc"/>
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YPO-J5-AcP"/>
+                            <constraint firstItem="Se3-S3-RE0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Ytu-on-80c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DjG-4c-p7g" secondAttribute="bottom" constant="36" id="hgP-ni-1GD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7E-6T-OWL" secondAttribute="trailing" constant="20" id="jn4-GH-f2u"/>
                             <constraint firstItem="oLx-ct-ftE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nH7-zW-RbM"/>
@@ -70,6 +84,7 @@
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="oKA-oY-DA7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Uqs-aH-CcR"/>
                     <connections>
                         <outlet property="combatLogView" destination="DjG-4c-p7g" id="3ZG-OQ-XdU"/>
                         <outlet property="heroAttackButton" destination="i7E-6T-OWL" id="UGB-zU-E1A"/>
@@ -78,7 +93,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
+            <point key="canvasLocation" x="904.61538461538453" y="71.090047393364927"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pOr-RS-qdS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ReA-kx-waa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lL5-Vz-Rgf">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ypp-eq-olk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rO8-RR-eI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.615384615384613" y="71.090047393364927"/>
         </scene>
     </scenes>
     <resources>

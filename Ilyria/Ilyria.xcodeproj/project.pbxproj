@@ -18,6 +18,8 @@
 		703C55D7256302AB00880992 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D4256302AB00880992 /* Creature.swift */; };
 		703C55D8256302AB00880992 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D5256302AB00880992 /* Monster.swift */; };
 		703C55D9256302AB00880992 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C55D6256302AB00880992 /* Hero.swift */; };
+		70483DC82563274300B36DF3 /* CreateHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70483DC62563274300B36DF3 /* CreateHeroViewController.swift */; };
+		70483DC92563274300B36DF3 /* CreateHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70483DC72563274300B36DF3 /* CreateHeroViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		703C55D4256302AB00880992 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		703C55D5256302AB00880992 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		703C55D6256302AB00880992 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		70483DC62563274300B36DF3 /* CreateHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeroViewController.swift; sourceTree = "<group>"; };
+		70483DC72563274300B36DF3 /* CreateHeroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateHeroViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		7020A39C2562311200CF9D1E /* Ilyria */ = {
 			isa = PBXGroup;
 			children = (
+				70483DC5256326D000B36DF3 /* CreateCreature */,
 				7020A3D3256234B300CF9D1E /* Creatures */,
 				7020A39D2562311200CF9D1E /* AppDelegate.swift */,
 				7020A39F2562311200CF9D1E /* SceneDelegate.swift */,
@@ -143,6 +148,15 @@
 				703C55D5256302AB00880992 /* Monster.swift */,
 			);
 			path = Creatures;
+			sourceTree = "<group>";
+		};
+		70483DC5256326D000B36DF3 /* CreateCreature */ = {
+			isa = PBXGroup;
+			children = (
+				70483DC62563274300B36DF3 /* CreateHeroViewController.swift */,
+				70483DC72563274300B36DF3 /* CreateHeroViewController.xib */,
+			);
+			path = CreateCreature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +264,7 @@
 			files = (
 				7020A3AA2562311500CF9D1E /* LaunchScreen.storyboard in Resources */,
 				7020A3A72562311500CF9D1E /* Assets.xcassets in Resources */,
+				70483DC92563274300B36DF3 /* CreateHeroViewController.xib in Resources */,
 				7020A3A52562311300CF9D1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70483DC82563274300B36DF3 /* CreateHeroViewController.swift in Sources */,
 				703C55D8256302AB00880992 /* Monster.swift in Sources */,
 				703C55D7256302AB00880992 /* Creature.swift in Sources */,
 				7020A3A22562311200CF9D1E /* ViewController.swift in Sources */,
