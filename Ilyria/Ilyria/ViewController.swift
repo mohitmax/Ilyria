@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var heroAttackButton: UIButton!
     @IBOutlet weak var monsterAttackButton: UIButton!
+    //replace this with UITextView
     @IBOutlet weak var combatLogLabel: UILabel!
         
     var hero: Hero?
