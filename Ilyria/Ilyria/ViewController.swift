@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     var logs: [String] = []
     
-    lazy var createHeroController = CreateHeroViewController(health: 10.0)
+    lazy var createHeroController = CreateHeroViewController(health: 10.0, damage: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +78,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createHeroAction(_ sender: UIButton) {
+        self.createHeroController.newHeroCreated = { hero in
+            print("Hero created - name \(hero.name)")
+            self.hero = hero
+        }
         navigationController?.show(createHeroController, sender: sender)
     }
     
