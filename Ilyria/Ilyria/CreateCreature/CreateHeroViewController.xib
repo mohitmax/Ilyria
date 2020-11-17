@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateHeroViewController" customModule="Ilyria" customModuleProvider="target">
             <connections>
+                <outlet property="healthPointsStepper" destination="xei-Ze-yS6" id="Whe-AT-V8p"/>
+                <outlet property="healthPointsTextField" destination="jbb-Gz-PYx" id="Zyy-Zg-M0M"/>
+                <outlet property="nameTextField" destination="OiR-qE-h9b" id="lV5-rJ-vrG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,19 +43,22 @@
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="skW-GW-9JX">
                     <rect key="frame" x="20" y="168" width="350" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-bx-Wm2">
-                            <rect key="frame" x="0.0" y="14.999999999999998" width="41.333333333333336" height="20.333333333333329"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-bx-Wm2">
+                            <rect key="frame" x="0.0" y="14.999999999999998" width="101" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbb-Gz-PYx">
-                            <rect key="frame" x="51.333333333333329" y="8" width="194.66666666666669" height="34"/>
+                            <rect key="frame" x="111" y="8" width="135" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xei-Ze-yS6">
+                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" autorepeat="NO" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xei-Ze-yS6">
                             <rect key="frame" x="256" y="9" width="94" height="32"/>
+                            <connections>
+                                <action selector="updateHealthPoint:" destination="-1" eventType="valueChanged" id="ICJ-P2-tBY"/>
+                            </connections>
                         </stepper>
                     </subviews>
                     <constraints>
