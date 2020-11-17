@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     var logs: [String] = []
     
+    lazy var createHeroController = CreateHeroViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -76,7 +78,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createHeroAction(_ sender: UIButton) {
-        
+        navigationController?.show(createHeroController, sender: sender)
     }
     
     func updateCombatLogs() {

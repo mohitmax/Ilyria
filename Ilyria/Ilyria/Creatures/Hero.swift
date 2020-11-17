@@ -7,16 +7,17 @@
 
 import Foundation
 
-enum HeroClassType: String {
+enum HeroClassType: String, Codable {
     case fighter, mage, rogue, cleric
 }
 
-class Hero: Creature {
+class Hero: Creature, Codable {
     
     //Protocol variables
     var damageValue: Int
     var name: String
     var healthPoints: Int
+    var creatureType: CreatureType
     
     //Instance variables
     var classType: HeroClassType
@@ -27,6 +28,7 @@ class Hero: Creature {
         self.healthPoints = health
         self.damageValue = damage
         self.classType = classType
+        self.creatureType = .hero
     }
     
     func takeDamage(by monster: Monster) -> String {

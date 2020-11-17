@@ -5,7 +5,7 @@
 //  Created by mickey on 2020-11-15.
 //
 
-enum CreatureType: String {
+enum CreatureType: String, Codable {
     case hero, monster, npc
 }
 
@@ -14,6 +14,7 @@ protocol Creature {
     var healthPoints: Int { get set }
     var damageValue: Int { get set }
     var amIDead: Bool { get }
+    var creatureType: CreatureType { get }
 }
 
 extension Creature {
@@ -21,6 +22,5 @@ extension Creature {
         return healthPoints <= 0
     }
 }
-
 
 

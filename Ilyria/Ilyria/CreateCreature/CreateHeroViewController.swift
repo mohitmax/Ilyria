@@ -9,10 +9,11 @@ import UIKit
 
 class CreateHeroViewController: UIViewController {
 
+    var hero: Hero?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
 }

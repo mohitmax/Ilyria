@@ -7,11 +7,13 @@
 
 import Foundation
 
-enum MonsterType: String {
+enum MonsterType: String, Codable {
     case devil, aberration, demon, beast, dragon
 }
 
-class Monster: Creature {
+class Monster: Creature, Codable {
+    var creatureType: CreatureType
+    
     var name: String
     var healthPoints: Int
     var damageValue: Int
@@ -23,6 +25,7 @@ class Monster: Creature {
         self.healthPoints = health
         self.damageValue = damage
         self.monsterType = monsterType
+        self.creatureType = .monster
     }
     
     func takeDamage(by hero: Hero) -> String {
