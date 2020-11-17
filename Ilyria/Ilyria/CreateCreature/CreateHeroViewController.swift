@@ -31,18 +31,8 @@ class CreateHeroViewController: UIViewController {
         setupUI()
     }
     
-    
     func setupUI() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveHero))
-    }
-    
-    @objc func saveHero() {
-        guard let name = nameTextField.text, let hpStr = healthPointsTextField.text, let hp = Int(hpStr), let dmgStr = damageTextField.text, let dmg = Int(dmgStr)  else { return }
-        let hero = Hero(name: name, health: hp, damage: dmg)
-        newHeroCreated?(hero)
-        
-        print("save button tapped")
-        self.navigationController?.popViewController(animated: true)
     }
     
     //MARK: Initializers
@@ -77,4 +67,12 @@ class CreateHeroViewController: UIViewController {
         damageTextField.text = "\(current)"
     }
     
+    @objc func saveHero() {
+        guard let name = nameTextField.text, let hpStr = healthPointsTextField.text, let hp = Int(hpStr), let dmgStr = damageTextField.text, let dmg = Int(dmgStr)  else { return }
+        let hero = Hero(name: name, health: hp, damage: dmg)
+        newHeroCreated?(hero)
+        
+        print("save button tapped")
+        self.navigationController?.popViewController(animated: true)
+    }
 }
