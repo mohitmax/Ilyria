@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     var logs: [String] = []
     
-    lazy var createHeroController = CreateHeroViewController(health: 10.0, damage: 1.0)
+    lazy var createHeroController = CreateHeroViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

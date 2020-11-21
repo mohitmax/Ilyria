@@ -38,14 +38,14 @@ class CreateHeroViewController: UIViewController {
     //MARK: Initializers
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        self.initialHealth = 0.0
-        self.initialDamage = 0.0
+        self.initialHealth = GlobalConstants.baseHealth
+        self.initialDamage = GlobalConstants.baseDamage
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     required init?(coder: NSCoder) {
-        self.initialHealth = 0.0
-        self.initialDamage = 0.0
+        self.initialHealth = GlobalConstants.baseHealth
+        self.initialDamage = GlobalConstants.baseDamage
         super.init(coder: coder)
     }
     
@@ -54,6 +54,7 @@ class CreateHeroViewController: UIViewController {
         initialHealth = health
         initialDamage = damage
     }
+    
     
     //MARK: Action methods
     
