@@ -66,10 +66,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func monsterAttackAction(_ sender: UIButton) {
-        guard let lion = monster else { return }
+        guard let monster = monster else { return }
         
         if let hero = hero {
-            let log = hero.takeDamage(by: lion)
+            let log = hero.takeDamage(by: monster)
             logs.append(log)
             updateCombatLogs()
             
