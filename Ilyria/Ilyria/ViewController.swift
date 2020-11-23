@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var combatLogView: UITextView!
         
     var hero: Hero?
-    var lion: Monster?
+    var monster: Monster?
     
     var logs: [String] = []
     
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     }
 
     func createCreatures() {
-        hero = Hero(name: "Hercules", health: 20, damage: 4)
-        lion = Monster(name: "Leslie", health: 12, damage: 2)
+        hero = Hero(name: "Hercules", health: 15, damage: 4)
+        monster = Monster(name: "Leslie", health: 12, damage: 2)
     }
     
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             heroAttackButton.alpha = 1
         }
         
-        if let isMonsterDead = lion?.amIDead, isMonsterDead {
+        if let isMonsterDead = monster?.amIDead, isMonsterDead {
             monsterAttackButton.isEnabled = false
             monsterAttackButton.alpha = 0.2
         } else {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     @IBAction func heroAttackAction(_ sender: UIButton) {
         guard let hero = hero else { return }
         
-        if let monster = lion {
+        if let monster = monster {
             let log = monster.takeDamage(by: hero)
             logs.append(log)
             updateCombatLogs()
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func monsterAttackAction(_ sender: UIButton) {
-        guard let lion = lion else { return }
+        guard let lion = monster else { return }
         
         if let hero = hero {
             let log = hero.takeDamage(by: lion)
@@ -78,9 +78,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createHeroAction(_ sender: UIButton) {
-        self.createHeroController.newHeroCreated = { hero in
-            print("Hero created - name \(hero.name)")
-            self.hero = hero
+        self.createHeroController.newHeroCreated = { (hero, monster) in
+            print("Hero created - name \(String(describing: hero?.name ?? monster?.name))")
+            if let hero = hero {
+                self.hero = hero
+            } else if let monster = monster {
+                self.monster = monster
+            }
         }
         navigationController?.show(createHeroController, sender: sender)
     }

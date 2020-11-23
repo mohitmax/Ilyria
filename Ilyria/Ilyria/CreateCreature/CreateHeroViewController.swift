@@ -18,10 +18,13 @@ class CreateHeroViewController: UIViewController {
     @IBOutlet weak var damageTextField: UITextField!
     @IBOutlet weak var damageStepper: UIStepper!
     
+    @IBOutlet weak var creatureTypeSelectButton: UIButton!
+    
     var initialHealth: Double
     var initialDamage: Double
+    var creatureType: CreatureType = .hero
     
-    var newHeroCreated: ((Hero) -> Void)?
+    var newHeroCreated: ((Hero?, Monster?) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,8 @@ class CreateHeroViewController: UIViewController {
     
     func setupUI() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveHero))
+        
+        creatureTypeSelectButton.setTitle("Select Creature Type", for: .normal)
     }
     
     //MARK: Initializers
@@ -68,12 +73,47 @@ class CreateHeroViewController: UIViewController {
         damageTextField.text = "\(current)"
     }
     
+    @IBAction func selectCreatureType(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Select Creature Type", message: "", preferredStyle: .actionSheet)
+        let heroAlertAction = UIAlertAction(title: "Hero", style: .default) { [weak self] (action) in
+            print("creature type HERO selected")
+            self?.creatureTypeSelectButton.setTitle("Hero", for: .normal)
+            self?.creatureType = .hero
+        }
+        let monsterAlertAction = UIAlertAction(title: "Monster", style: .default) { [weak self] (action) in
+            print("creature type MONSTER selected")
+            self?.creatureTypeSelectButton.setTitle("Monster", for: .normal)
+            self?.creatureType = .monster
+        }
+        let npcAlertAction = UIAlertAction(title: "NPC", style: .default) { [weak self] (action) in
+            print("creature type MONSTER selected")
+            self?.creatureTypeSelectButton.setTitle("NPC", for: .normal)
+            self?.creatureType = .npc
+        }
+        
+        alert.addAction(heroAlertAction)
+        alert.addAction(monsterAlertAction)
+        alert.addAction(npcAlertAction)
+        
+        present(alert, animated: true) {
+            print("creature type selected")
+        }
+        
+    }
+    
     @objc func saveHero() {
         guard let name = nameTextField.text, let hpStr = healthPointsTextField.text, let hp = Int(hpStr), let dmgStr = damageTextField.text, let dmg = Int(dmgStr)  else { return }
-        let hero = Hero(name: name, health: hp, damage: dmg)
-        newHeroCreated?(hero)
         
+        if self.creatureType == .monster {
+            let monster = Monster(name: name, health: hp, damage: dmg)
+            newHeroCreated?(nil, monster)
+        } else {
+            let hero = Hero(name: name, health: hp, damage: dmg)
+            newHeroCreated?(hero, nil)
+        }
+
         print("save button tapped")
         self.navigationController?.popViewController(animated: true)
     }
+    
 }
