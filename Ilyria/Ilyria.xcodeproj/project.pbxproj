@@ -21,6 +21,8 @@
 		70483DC82563274300B36DF3 /* CreateHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70483DC62563274300B36DF3 /* CreateHeroViewController.swift */; };
 		70483DC92563274300B36DF3 /* CreateHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70483DC72563274300B36DF3 /* CreateHeroViewController.xib */; };
 		705A0B1C2568D1D100D3CD02 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705A0B1B2568D1D100D3CD02 /* GlobalConstants.swift */; };
+		707DAB2E2570B93A00D0D4A7 /* CombatEvolved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707DAB2D2570B93A00D0D4A7 /* CombatEvolved.swift */; };
+		707DAB332570BA7E00D0D4A7 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707DAB322570BA7E00D0D4A7 /* Weapon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		70483DC62563274300B36DF3 /* CreateHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeroViewController.swift; sourceTree = "<group>"; };
 		70483DC72563274300B36DF3 /* CreateHeroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateHeroViewController.xib; sourceTree = "<group>"; };
 		705A0B1B2568D1D100D3CD02 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		707DAB2D2570B93A00D0D4A7 /* CombatEvolved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatEvolved.swift; sourceTree = "<group>"; };
+		707DAB322570BA7E00D0D4A7 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		7020A39C2562311200CF9D1E /* Ilyria */ = {
 			isa = PBXGroup;
 			children = (
+				707DAB372570C3DD00D0D4A7 /* Items */,
+				707DAB2C2570B8AE00D0D4A7 /* Protocols */,
 				705A0B1A2568D1A700D3CD02 /* Utility */,
 				70483DC5256326D000B36DF3 /* CreateCreature */,
 				7020A3D3256234B300CF9D1E /* Creatures */,
@@ -146,7 +152,6 @@
 		7020A3D3256234B300CF9D1E /* Creatures */ = {
 			isa = PBXGroup;
 			children = (
-				703C55D4256302AB00880992 /* Creature.swift */,
 				703C55D6256302AB00880992 /* Hero.swift */,
 				703C55D5256302AB00880992 /* Monster.swift */,
 			);
@@ -168,6 +173,23 @@
 				705A0B1B2568D1D100D3CD02 /* GlobalConstants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		707DAB2C2570B8AE00D0D4A7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				703C55D4256302AB00880992 /* Creature.swift */,
+				707DAB2D2570B93A00D0D4A7 /* CombatEvolved.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		707DAB372570C3DD00D0D4A7 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				707DAB322570BA7E00D0D4A7 /* Weapon.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +328,8 @@
 				703C55D7256302AB00880992 /* Creature.swift in Sources */,
 				7020A3A22562311200CF9D1E /* ViewController.swift in Sources */,
 				7020A39E2562311200CF9D1E /* AppDelegate.swift in Sources */,
+				707DAB332570BA7E00D0D4A7 /* Weapon.swift in Sources */,
+				707DAB2E2570B93A00D0D4A7 /* CombatEvolved.swift in Sources */,
 				7020A3A02562311200CF9D1E /* SceneDelegate.swift in Sources */,
 				705A0B1C2568D1D100D3CD02 /* GlobalConstants.swift in Sources */,
 				703C55D9256302AB00880992 /* Hero.swift in Sources */,

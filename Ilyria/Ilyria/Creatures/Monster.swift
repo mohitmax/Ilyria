@@ -44,7 +44,7 @@ class Monster: Creature, Codable {
         return "\n\(monsterType.rawValue.capitalized) \(name) has taken \(hero.damageValue) points of damage. Current health: \(healthPoints)"
     }
     
-    func attack() -> Int {
+    func attack(monster: Monster, for value:Int) -> Int {
         return damageValue
     }
     

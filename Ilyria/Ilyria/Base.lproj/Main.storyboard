@@ -16,37 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-6T-OWL">
-                                <rect key="frame" x="20" y="169" width="350" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-6T-OWL">
+                                <rect key="frame" x="20" y="169" width="120" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.656692343013631" blue="0.54750797686343255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rjh-ji-m69"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Hero Attack">
+                                <state key="normal" title="Hero ATK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="heroAttackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ql-bf-7CC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-ct-ftE">
-                                <rect key="frame" x="20" y="251" width="350" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="rPa-oP-MwC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Monster Attack">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="monsterAttackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kon-M1-UTW"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Combat logs will be displayed here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-4c-p7g">
-                                <rect key="frame" x="20" y="361" width="350" height="413"/>
+                                <rect key="frame" x="20" y="574" width="350" height="200"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mUi-du-eQg"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -65,6 +54,20 @@
                                     <action selector="createHeroAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiA-NH-eIw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-ct-ftE">
+                                <rect key="frame" x="201" y="169" width="164" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rPa-oP-MwC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Monster Attack">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="monsterAttackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kon-M1-UTW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,16 +75,14 @@
                             <constraint firstItem="DjG-4c-p7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="36n-RH-WWk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Se3-S3-RE0" secondAttribute="trailing" constant="20" id="Acu-N6-smN"/>
                             <constraint firstItem="Se3-S3-RE0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AyG-Wj-u0U"/>
-                            <constraint firstItem="DjG-4c-p7g" firstAttribute="top" secondItem="oLx-ct-ftE" secondAttribute="bottom" constant="50" id="Bzq-Hp-TQX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLx-ct-ftE" secondAttribute="trailing" constant="20" id="MLs-zW-WKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLx-ct-ftE" secondAttribute="trailing" constant="25" id="MLs-zW-WKc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjG-4c-p7g" secondAttribute="trailing" constant="20" id="PSs-UY-Ebc"/>
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YPO-J5-AcP"/>
                             <constraint firstItem="Se3-S3-RE0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Ytu-on-80c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DjG-4c-p7g" secondAttribute="bottom" constant="36" id="hgP-ni-1GD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7E-6T-OWL" secondAttribute="trailing" constant="20" id="jn4-GH-f2u"/>
-                            <constraint firstItem="oLx-ct-ftE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nH7-zW-RbM"/>
-                            <constraint firstItem="oLx-ct-ftE" firstAttribute="top" secondItem="i7E-6T-OWL" secondAttribute="bottom" constant="22" id="njM-eh-gco"/>
+                            <constraint firstItem="oLx-ct-ftE" firstAttribute="top" secondItem="i7E-6T-OWL" secondAttribute="bottom" constant="-60" id="njM-eh-gco"/>
                             <constraint firstItem="i7E-6T-OWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="oKA-oY-DA7"/>
+                            <constraint firstItem="oLx-ct-ftE" firstAttribute="leading" secondItem="i7E-6T-OWL" secondAttribute="trailing" constant="61" id="vb8-vz-o8P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uqs-aH-CcR"/>
